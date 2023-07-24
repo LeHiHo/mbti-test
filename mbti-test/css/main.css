@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'neon';
+    src: url('../font/neodgm.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "neon";
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+/* MAIN PAGE */
+#main{
+    display: block;
+}
+.main__wrapper {
+    width: 350px;
+    height: 700px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.main__title{
+
+    font-size: 35px;
+    margin-bottom: 100px;
+}
+
+#dumbell {
+    width: 100px;
+    height: 100px;
+    animation: rotateImg 2.0s linear infinite;
+    margin-bottom: 50px;
+}
+
+@keyframes rotateImg {
+100% {
+    transform: rotate(360deg);
+}
+}
+
+
+
+.main__sub-title{
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+.main__text{
+    font-size: 13px;
+    margin-bottom: 50px;
+
+}
+
+.main__start-btn{
+    font-weight: 700;
+    background-color: coral;
+    padding: 10px 22px;
+    font-size: 22px;
+    border-radius: 25px;
+    color: black;
+}
+
+.main__start-btn:visited{
+    text-decoration: none;
+    color: black;
+}
+.main__start-btn:hover {
+    color: white;
+    text-decoration: none;
+    background-color: royalblue;
+    transition: .5s;
+}
+
+/* TEST PAGE */
+#test{
+    display: none;
+}
+
+.test__status {
+    background-color: white;
+    height: 10px;
+    width: 330px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.test__statusBar {
+    background-color: orange;
+    height: 10px;
+    border-radius: 20px;
+    width: 0px;
+}
+
+.test__question-box{
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    width: 330px;
+    font-size: 17px;
+    padding: 3rem;
+}
+
+.test__answer-box{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.answer {
+    background-color: white;
+    width: 330px;
+    display: block;
+    border: 0px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 1rem;
+}
