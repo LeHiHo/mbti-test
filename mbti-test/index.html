@@ -33,7 +33,7 @@
       </div>
 
       <div>
-        <button type="button" class="main__start-btn" id="startBtn">
+        <button type="button" class="main__start-btn">
           START
         </button>
       </div>
@@ -49,7 +49,7 @@
         </div>
       </div>
 
-      <div class="test__question-box">
+      <div class="test__question-box" id="questionBox">
         <span class="question">질문</span>
       </div>
       <div class="test__answer-box">
@@ -63,7 +63,26 @@
   </section>
 
   <section class="cotainer" id="result">
-    <h1>끝</h1>
+    <div class="result__wrapper">
+      <div class="result__image">
+      </div>
+
+      <div class="result__title">
+        운동이름
+      </div>
+
+      <div class="result__text">
+        운동설명
+      </div>
+
+      <div>
+        <button type="button" class="result__redo-btn" id="redoBtn">
+          다시하기
+        </button>
+      </div>
+
+    </div>
+
   </section>
 
   <script src="./js/main.js"></script>

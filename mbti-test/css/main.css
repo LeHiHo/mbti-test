@@ -40,14 +40,13 @@ body {
 .main__title{
 
     font-size: 35px;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 #dumbell {
     width: 100px;
     height: 100px;
     animation: rotateImg 2.0s linear infinite;
-    margin-bottom: 50px;
 }
 
 @keyframes rotateImg {
@@ -57,10 +56,10 @@ body {
 }
 
 
-
 .main__sub-title{
     font-size: 22px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
 
 .main__text{
@@ -110,14 +109,7 @@ body {
     width: 0px;
 }
 
-/* @keyframes blink-effect {
-    50% {
-        opacity: 0;
-    }
-} */
-
 @keyframes blink {
-    0%, 100% { opacity: 1; }
     50% { opacity: 0; }
 }
 
@@ -128,7 +120,6 @@ body {
     width: 330px;
     font-size: 17px;
     padding: 3rem;
-    animation: blink 1s;
 }
 
 .test__answer-box{
@@ -158,4 +149,86 @@ body {
 /* result page */
 #result {
     display: none;
+}
+
+.result__wrapper {
+    width: 350px;
+    height: 700px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+/* .result__title{
+
+    font-size: 35px;
+    margin-bottom: 100px;
+} */
+
+#dumbell {
+    width: 100px;
+    height: 100px;
+    animation: rotateImg 2.0s linear infinite;
+    margin-bottom: 50px;
+}
+
+@keyframes rotateImg {
+100% {
+    transform: rotate(360deg);
+}
+}
+
+
+
+.result__title{
+    font-size: 22px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.result__text{
+    font-size: 13px;
+    margin-bottom: 50px;
+
+}
+
+.result__redo-btn{
+    font-weight: 700;
+    background-color: rgb(57, 56, 104);
+    padding: 10px 22px;
+    font-size: 22px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+}
+
+.result__redo-btn:visited{
+    text-decoration: none;
+    color: black;
+}
+.result__redo-btn:hover {
+    color: white;
+    text-decoration: none;
+    background-color: orange;
+    transition: .5s;
+}
+
+.result__image {
+
+    width:auto;
+    height:auto;
+    overflow:hidden;
+    margin:0 auto;
+}
+
+.result__image > img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
