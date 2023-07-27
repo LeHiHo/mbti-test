@@ -272,35 +272,36 @@ function judge_mbti() {
     if (judge_EI <= 1 && judge_NS <= 1 && judge_TF > 1) {
         resultTitle.innerText = sportsList.ISTJ_ISTP.sportName, // ISTJ, ISTP
         resultText.innerText = sportsList.ISTJ_ISTP.sportDetail,
-        resultImage.innerHTML = '<img src="../mbti-test/img/보디빌딩.jpeg">';
+        resultImage.innerHTML = '<img src="./img/보디빌딩.jpeg">';
     } else if (judge_EI <= 1 && judge_NS > 1 && judge_TF > 1) {
         resultTitle.innerText = sportsList.INTJ_INTP.sportName, // INTJ, INTP
         resultText.innerText = sportsList.INTJ_INTP.sportDetail,
-        resultImage.innerHTML = '<img src="../mbti-test/img/파워리프팅.jpeg">';
+        resultImage.innerHTML = '<img src="./img/파워리프팅.jpeg">';
     } else if (judge_EI > 1 && judge_NS > 1 && judge_TF <= 1){
         resultTitle.innerText = sportsList.ENFJ_ENFP.sportName, // ENFJ, ENFP
         resultText.innerText = sportsList.ENFJ_ENFP.sportDetail,
-        resultImage.innerHTML = '<img src="../mbti-test/img/크로스핏.jpeg">';
+        resultImage.innerHTML = '<img src="./img/크로스핏.jpeg">';
     } else if (judge_EI <= 1 && judge_NS <= 1 && judge_TF <= 1){
         resultTitle.innerText = sportsList.ISFP_ISFJ.sportName, // ISFP,ISFJ
         resultText.innerText = sportsList.ISFP_ISFJ.sportDetail,
-        resultImage.innerHTML = '<img src="../mbti-test/img/요가.jpeg">';
+        resultImage.innerHTML = '<img src="./img/요가.jpeg">';
     } else if (judge_EI <= 1 && judge_NS > 1 && judge_TF <= 1){
         resultTitle.innerText = sportsList.INFP_INFJ.sportName, // INFP,INFJ
         resultText.innerText = sportsList.INFP_INFJ.sportName,
-        resultImage.innerHTML = '<img src="../mbti-test/img/필라테스jpeg">';
+        resultImage.innerHTML = '<img src="./img/필라테스jpeg">';
+        img = img/dumbell.png
     } else if (judge_EI > 1 && judge_NS > 1 && judge_TF > 1){
         resultTitle.innerText = sportsList.ENTP_ENTJ.sportName, // ENTP, ENTJ
         resultText.innerText = sportsList.ENTP_ENTJ.sportDetail,
-        resultImage.innerHTML = '<img src="../mbti-test/img/팀스포츠.jpeg">';
+        resultImage.innerHTML = '<img src="./img/팀스포츠.jpeg">';
     } else if (judge_EI > 1 && judge_NS <= 1 && judge_JP <= 1){
         resultTitle.innerText = sportsList.ESTP_ESFP.sportName, // ESTP, ESFP
         resultText.innerText = sportsList.ESTP_ESFP.sportDetail,
-        resultImage.innerHTML = '<img src="../mbti-test/img/클라이밍.jpeg">';
+        resultImage.innerHTML = '<img src="./img/클라이밍.jpeg">';
     } else if (judge_EI > 1 && judge_NS <= 1 && judge_JP > 1) {
         resultTitle.innerText = sportsList.ESTJ_ESFJ.sportName, // ESTJ, ESFJ
         resultText.innerText = sportsList.ESTJ_ESFJ.sportDetail,
-        resultImage.innerHTML = '<img src="../mbti-test/img/러닝.jpeg">';
+        resultImage.innerHTML = '<img src="./img/러닝.jpeg">';
     }
 };
 
