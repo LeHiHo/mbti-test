@@ -84,35 +84,35 @@ function judge_mbti() {
 
     switch (true) {
         case judge_EI <= 1 && judge_NS <= 1 && judge_TF > 1:
-            select_mbti(ISTJ_ISTP); //보디빌딩
+            select_mbti('ISTJ_ISTP'); //보디빌딩
             break;
 
         case judge_EI <= 1 && judge_NS > 1 && judge_TF > 1:
-            select_mbti(INTJ_INTP); //파워리프팅
+            select_mbti('INTJ_INTP'); //파워리프팅
             break;
 
         case judge_EI > 1 && judge_NS > 1 && judge_TF <= 1:
-            select_mbti(ENFJ_ENFP); //크로스핏
+            select_mbti('ENFJ_ENFP'); //크로스핏
             break;
 
         case judge_EI <= 1 && judge_NS <= 1 && judge_TF <= 1:
-            select_mbti(ISFP_ISFJ); //요가
+            select_mbti('ISFP_ISFJ'); //요가
             break;
 
         case judge_EI <= 1 && judge_NS > 1 && judge_TF <= 1:
-            select_mbti(INFP_INFJ); //필라테스
+            select_mbti('INFP_INFJ'); //필라테스
             break;
 
         case judge_EI > 1 && judge_NS > 1 && judge_TF > 1:
-            select_mbti(ENTP_ENTJ); //팀스포츠
+            select_mbti('ENTP_ENTJ'); //팀스포츠
             break;
 
         case judge_EI > 1 && judge_NS <= 1 && judge_JP <= 1:
-            select_mbti(ESTP_ESFP); //클라이밍
+            select_mbti('ESTP_ESFP'); //클라이밍
             break;
 
         case judge_EI > 1 && judge_NS <= 1 && judge_JP > 1:
-            select_mbti(ESTJ_ESFJ); //러닝
+            select_mbti('ESTJ_ESFJ'); //러닝
             break;
 
         default:
